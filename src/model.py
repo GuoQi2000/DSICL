@@ -132,6 +132,7 @@ class speculative_decoder:
 
             probs = soft(log_probs)
             # print(probs)
+            torch.cuda.empty_cache()
             return probs
         
     
