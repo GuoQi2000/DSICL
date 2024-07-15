@@ -2,11 +2,11 @@ import torch
 import json
 import numpy as np
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from src.data_reader import get_data_reader, DataReader
-from src.prompter import Prompter
-from src.selector import RandomSelector
-from src.inferencer import DirectInferencer
-from src.evaluator import Evaluator
+from dsicl.data_reader import get_data_reader, DataReader
+from dsicl.prompter import Prompter
+from dsicl.selector import RandomSelector
+from dsicl.inferencer import DirectInferencer
+from dsicl.evaluator import Evaluator
 
 # 换成本地的model地址或默认的hugging face模型名称
 model_path = "../model/llama_2.7b"
