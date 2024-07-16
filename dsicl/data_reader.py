@@ -4,9 +4,8 @@ import logging
 import numpy as np
 from .template import LABEL_MAP
 from .utils import set_seed
-# DATA_ROOT = "/home/gq/DS-ICL_benchmark/"
-DATA_ROOT = "/home/gq/benchmark/DEmO_data/"
-# DATA_ROOT = "/home/gq/ICL_data/"
+
+DATA_ROOT = "./DEmO_data/"
 
 def read_train_test(task, seed):
     set_seed(seed)

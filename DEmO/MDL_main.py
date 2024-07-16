@@ -7,7 +7,7 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 import sys
-sys.path.append('/home/gq/DSICL/')
+sys.path.append('../../DSICL/')
 
 from dsicl.utils import set_seed
 from dsicl.data_reader import read_demo_benchmark
@@ -33,7 +33,7 @@ def main(args):
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, legacy=False, use_fast=False, padding_side="right")
-    model = AutoModelForCausalLM.from_pretrained(args.model_path).to(torch.device('cuda'))
+    model = AutoModelForCausalLM.from_pretrained(args.model_path).half().to(torch.device('cuda'))
 
     if not os.path.exists(args.saving_path):
         os.makedirs(args.saving_path)
@@ -50,7 +50,7 @@ def main(args):
 
     ranker = MDLRanker(model, tokenizer, prompter, trainset.data_info['label_space'], candidate_num=args.candidate_num)
 
-    demos_l = [ranker.rank(original_demos, d, args.shots).to_list() for d in tqdm(testset)]
+    demos_l = [ranker.rank(original_demos, d, len(original_demos)).to_list() for d in tqdm(testset)]
 
     with open(f'{args.saving_path}/demos.json', 'w') as f:
         sample_demos_pairs = [{'sample':testset[i], 'demos':demos_l[i]} for i in range(len(testset))]

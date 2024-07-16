@@ -22,7 +22,7 @@ class DEmORanker(BaseRanker):
         self.candidate_demos = None
 
     def entropy(self, probs: torch.Tensor) -> torch.Tensor:
-        return torch.sum(-probs*torch.log2(probs+1e-10))
+        return torch.sum(-probs*torch.log2(probs))
 
     def stage_1(self, demos: List[Dict[str, Any]], orders: List[int]) -> Dict[str, Any]:
         content_free_sample = {k:v for k,v in demos[0].items()}
@@ -36,6 +36,7 @@ class DEmORanker(BaseRanker):
                     if not key == 'label':
                         content_free_sample[key] = token
                 prefix = self.prompter.generate_context([demos[_] for _ in order], content_free_sample)
+               # print(prefix)
                 probs = self.decoder.decode(prefix, self.labels)
                 content_free_probs += probs
             content_free_probs /= len(self.content_free_tokens)

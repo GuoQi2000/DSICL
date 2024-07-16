@@ -99,47 +99,45 @@ class LLM(nn.Module):
 
 class speculative_decoder:
     
-    def __init__(self, model: AutoModelForCausalLM, tokenizer: AutoTokenizer):
+    def __init__(self, model: AutoModelForCausalLM, tokenizer: AutoTokenizer, truncation_l = 2048):
         self.model = model
         self.tokenizer = tokenizer
         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
         self.device = self.model.device
-
+        self.log_soft = nn.LogSoftmax(dim=0)
+        self.soft = nn.Softmax(dim=0)
+        self.truncation_l = truncation_l
+        
     def decode(self, prefix:str, answer_list:list, return_logits=False):
-        truncation_l = 2048
+
         with torch.no_grad():
 
-            log_soft = nn.LogSoftmax(dim=0)
-            soft = nn.Softmax(dim=0)
-
             prompts = [prefix+answer for answer in answer_list] # 拼接所有候选label
-            l = len(self.tokenizer(prefix,max_length=truncation_l,truncation=True, return_tensors="pt").input_ids[0]) # prefix长度
-
-            inputs = self.tokenizer(prompts,max_length=truncation_l, truncation=True, padding= True, return_tensors="pt").to(self.model.device)
-
+            
+            l = len(self.tokenizer(prefix,max_length=self.truncation_l,truncation=True, return_tensors="pt").input_ids[0]) # prefix长度
+            
+            inputs = self.tokenizer(prompts,max_length=self.truncation_l, truncation=True, padding= True, return_tensors="pt").to(self.model.device)
+            
             seq_logits = self.model(**inputs, use_cache=False).logits[:, l-1:-1,:]
-
+            
             tokens = inputs.input_ids[:,l:] # 取label对应的logits
 
-            log_probs = torch.zeros(len(prompts)).to(self.model.device) # 取概率的对数
+            log_probs = torch.zeros(len(prompts), device=self.model.device)
 
             for i in range(len(prompts)):
-                c = 0
                 for j in range(seq_logits.size()[1]):
                     token_id = tokens[i][j]
                     if token_id == self.tokenizer.eos_token_id: # 遇到padding token结束
                         break
-                    c+=1
                     vocabulary = seq_logits[i][j]
  
-                    log_probs[i] += log_soft(vocabulary)[token_id]
-
-            probs = soft(log_probs)
-
+                    log_probs[i] += self.log_soft(vocabulary)[token_id]
+            probs = self.soft(log_probs)
             torch.cuda.empty_cache()
             if return_logits:
                 return log_probs
             return probs
+        
         
     # def decode(self, prefix:str, answer_list:list):
     #     truncation_l = 8000

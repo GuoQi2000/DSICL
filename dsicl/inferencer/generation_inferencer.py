@@ -9,16 +9,7 @@ from transformers.generation.stopping_criteria import StoppingCriteria, Stopping
     STOPPING_CRITERIA_INPUTS_DOCSTRING, add_start_docstrings
 
 class StopAtSpecificTokenCriteria(StoppingCriteria):
-    """
-    当生成出第一个指定token时，立即停止生成
-    ---------------
-    ver: 2023-08-02
-    by: changhongyu
-    """
     def __init__(self, token_id_list: List[int] = None):
-        """
-        :param token_id_list: 停止生成的指定token的id的列表
-        """
         self.token_id_list = token_id_list
         
     @add_start_docstrings(STOPPING_CRITERIA_INPUTS_DOCSTRING)

@@ -1,0 +1,1026 @@
+[
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Abbreviation",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Abbreviation"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Person",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Entity"
+    },
+    {
+        "y_t": "Location",
+        "y_p": "Location"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Number",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Entity",
+        "y_p": "Person"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Number"
+    },
+    {
+        "y_t": "Description",
+        "y_p": "Description"
+    }
+]

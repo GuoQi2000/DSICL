@@ -17,7 +17,7 @@ class DirectInferencer(BaseInferencer):
         self.prompter = prompter
         self.labels = labels
 
-    def infer(self, demos: DataReader, sample: Dict):#并行解码，目标标签并行执行model推理（batch size = 标签num），显存占用大，以推理空间（显存）换推理时间，推理速度变快
+    def infer(self, demos: DataReader, sample: Dict):
         context = self.prompter.generate_context(demos, sample)
         # print(context)
         label_idx = self.decoder.decode(context, self.labels).argmax()

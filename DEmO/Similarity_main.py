@@ -7,7 +7,7 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 import sys
-sys.path.append('/home/gq/DSICL/')
+sys.path.append('../../DSICL/')
 
 from dsicl.utils import set_seed
 from dsicl.data_reader import DataReader, read_demo_benchmark

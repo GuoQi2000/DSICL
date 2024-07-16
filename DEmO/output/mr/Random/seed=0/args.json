@@ -1,7 +1,7 @@
 {
     "gpu": "0",
     "saving_path": "./output/mr/Random/seed=0",
-    "model_path": "/home/gq/model/llama_1.3b",
+    "model_path": "/home/gq/model/llama_7b",
     "task": "mr",
     "seed": 0,
     "shots": 4
