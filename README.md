@@ -12,7 +12,7 @@
 
 ## Introduction
 
-DEmO is Dataset-free Example Ordering for In-context Learning that requires no extra data. DEmO works by
+DEmO is **D**ataset-free **E**xa**m**ple **O**rdering framework for In-context Learning that requires no extra data. DEmO works by
 filtering out a subset of orders featuring label fairness, then selecting the most influential order for each test instance. The employment of a content-free metric makes DEmO independent of in-domain data.
 
 ![Overview](figs/DEmO_overview.png)
@@ -50,12 +50,12 @@ over a wide range of strong baselines.
 Here is the command to run and evaluate DEmO on the task "trec": \
 (**Other methods are also supported (see DEmO/script for more details).**)
 ```sh
-sh ./script/run_demo.sh --gpu 0
-                        --task trec
-                        --model_path princeton-nlp/Sheared-LLaMA-1.3B
-                        --method DEmO
-                        --shots 4
-                        --seed 0
+sh ./script/run_demo.sh --gpu 0 \
+                        --task trec \
+                        --model_path princeton-nlp/Sheared-LLaMA-1.3B \
+                        --method DEmO \
+                        --shots 4 \
+                        --seed 0 \
 ```
 
 The demonstrations and predictions will be saved in the `DEmO/output/` directory.
@@ -66,7 +66,7 @@ The demonstrations and predictions will be saved in the `DEmO/output/` directory
 - `--shots`: Shots for ICL.
 - `--seed`: Random seed.
 
-You can also directly run the DEMO.ipynb file.
+You can also directly run the DEMO.ipynb file and employ DEmO on customized tasks.
 
 
 ### Run all the methods
@@ -74,9 +74,9 @@ You can also directly run the DEMO.ipynb file.
 To evaluate all the methods compared in our paper:
 
 ```sh 
-sh ./script/run_all.sh  --gpu 0
-                        --task trec
-                        --model_path princeton-nlp/Sheared-LLaMA-1.3B
+sh ./script/run_all.sh  --gpu 0 \
+                        --task trec \
+                        --model_path princeton-nlp/Sheared-LLaMA-1.3B \
                         --seed 0
 ```
 
