@@ -1,0 +1,11 @@
+{
+    "gpu": "0",
+    "saving_path": "./output/cr/Best_of_10/seed=1",
+    "model_path": "/home/gq/model/llama_1.3b",
+    "data_path": "/home/gq/benchmark/DEmO_data",
+    "task": "cr",
+    "seed": 1,
+    "shots": 4,
+    "candidate_num": 10,
+    "val_size": 100
+}

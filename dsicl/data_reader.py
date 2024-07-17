@@ -5,36 +5,36 @@ import numpy as np
 from .template import LABEL_MAP
 from .utils import set_seed
 
-DATA_ROOT = "../DEmO/DEmO_data/"
+DATA_ROOT = "xxx"
 
-def read_demo_benchmark(task, seed):
+def read_demo_benchmark(data_path, task, seed):
     if task == 'sst2':
-        trainset = get_data_reader(file_name='sst2_train.json', label_map={})
-        testset = get_data_reader(file_name='sst2_dev.json', label_map={})
+        trainset = get_data_reader(file_name='sst2_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='sst2_dev.json', label_map={}, data_root=data_path)
     elif task == 'cr':
-        trainset = get_data_reader(file_name='cr_train.json', label_map={})
-        testset = get_data_reader(file_name='cr_test.json', label_map={})
+        trainset = get_data_reader(file_name='cr_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='cr_test.json', label_map={}, data_root=data_path)
     elif task == 'mr':
-        trainset = get_data_reader(file_name='mr_train.json', label_map={})
-        testset = get_data_reader(file_name='mr_test.json', label_map={})
+        trainset = get_data_reader(file_name='mr_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='mr_test.json', label_map={}, data_root=data_path)
     elif task == 'subj':
-        trainset = get_data_reader(file_name='subj_train.json', label_map={})
-        testset = get_data_reader(file_name='subj_test.json', label_map={})
+        trainset = get_data_reader(file_name='subj_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='subj_test.json', label_map={}, data_root=data_path)
     elif task == 'rte':
-        trainset = get_data_reader(file_name='rte_train.json', label_map={})
-        testset = get_data_reader(file_name='rte_val.json', label_map={})
+        trainset = get_data_reader(file_name='rte_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='rte_val.json', label_map={}, data_root=data_path)
     elif task == 'snli':
-        trainset = get_data_reader(file_name='snli_train.json', label_map={})
-        testset = get_data_reader(file_name='snli_test.json', label_map={})
+        trainset = get_data_reader(file_name='snli_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='snli_test.json', label_map={}, data_root=data_path)
     elif task == 'agnews':
-        trainset = get_data_reader(file_name='agnews_train.json', label_map={})
-        testset = get_data_reader(file_name='agnews_test.json', label_map={})
+        trainset = get_data_reader(file_name='agnews_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='agnews_test.json', label_map={}, data_root=data_path)
     elif task == 'trec':
-        trainset = get_data_reader(file_name='trec_train.json', label_map={})
-        testset = get_data_reader(file_name='trec_test.json', label_map={})
+        trainset = get_data_reader(file_name='trec_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='trec_test.json', label_map={}, data_root=data_path)
     elif task == 'dbpedia':
-        trainset = get_data_reader(file_name='dbpedia_train.json', label_map={})
-        testset = get_data_reader(file_name='dbpedia_test.json', label_map={})
+        trainset = get_data_reader(file_name='dbpedia_train.json', label_map={}, data_root=data_path)
+        testset = get_data_reader(file_name='dbpedia_test.json', label_map={}, data_root=data_path)
     else:
         raise Exception("Sorry, the task is not supported.")
     set_seed(seed)
@@ -125,9 +125,9 @@ def get_data_reader(file_name, label_map=None, data_root = None) -> DataReader:
     if label_map is None:
         label_map = LABEL_MAP[file_name.split('/')[0]]
     if not data_root is None:
-        file_path = data_root + file_name
+        file_path = data_root + '/' + file_name
     else:
-        file_path = DATA_ROOT + file_name
+        file_path = DATA_ROOT + '/' + file_name
     with open(file_path,'r') as f:
         data_dic = json.load(f)
         data = DataReader(data_dic['data'], data_dic['data_info'], label_map)

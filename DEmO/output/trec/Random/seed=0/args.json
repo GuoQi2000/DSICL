@@ -1,8 +1,0 @@
-{
-    "gpu": "0",
-    "saving_path": "./output/trec/Random/seed=0",
-    "model_path": "../../model/llama_1.3b",
-    "task": "trec",
-    "seed": 0,
-    "shots": 4
-}

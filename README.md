@@ -22,7 +22,7 @@ over a wide range of strong baselines.
 
 ## Requirements
 
-- Python 3.10.x
+- Python >= 3.10
 - Required Python packages listed in `requirements.txt`
 
 ## Installation
@@ -30,7 +30,7 @@ over a wide range of strong baselines.
 1. Clone the repository:
    ```sh
    git clone -b DEmO https://github.com/GuoQi2000/DSICL.git
-   cd DSICL/DEmO
+   cd DSICL
    ```
 
 2. Install the required packages:
@@ -46,14 +46,18 @@ over a wide range of strong baselines.
 
 ## Quick start
 
+   ```sh
+   cd ./DEmO
+   ```
+
 ### Run DEmO
 Here is the command to run and evaluate DEmO on the task "trec": \
-(**Other methods are also supported (see DEmO/script for more details).**)
+(**Other methods are also supported (see DEmO/script/ for more details).**)
 ```sh
 sh ./script/run_demo.sh --gpu 0 \
                         --task trec \
                         --model_path princeton-nlp/Sheared-LLaMA-1.3B \
-                        --method DEmO \
+                        --data_path $PATH_OF_DEMO_DATA
                         --shots 4 \
                         --seed 0 \
 ```
@@ -62,8 +66,8 @@ The demonstrations and predictions will be saved in the `DEmO/output/` directory
 
 - `--gpu`: Specify the GPU to use.
 - `--model_path`: The path of LLMs.
-- `--method`: The method to employ for demonstration selection.
-- `--shots`: Shots for ICL.
+- `--data_path`: The path of DEmO_data.
+- `--shots`: Shots of ICL.
 - `--seed`: Random seed.
 
 You can also directly run the DEMO.ipynb file and employ DEmO on customized tasks.
@@ -77,6 +81,7 @@ To evaluate all the methods compared in our paper:
 sh ./script/run_all.sh  --gpu 0 \
                         --task trec \
                         --model_path princeton-nlp/Sheared-LLaMA-1.3B \
+                        --data_path $PATH_OF_DEMO_DATA \
                         --seed 0
 ```
 

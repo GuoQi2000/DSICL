@@ -21,6 +21,7 @@ def paras_args():
     parser.add_argument('--gpu',default='0', type=str, help='Specify the GPU to use')
     parser.add_argument('--saving_path',default='./output/', type=str, help='Directory to save the demonstrations')
     parser.add_argument('--model_path',default='', type=str, help='Model to use')
+    parser.add_argument('--data_path',default='', type=str, help='Path of DEmO data')
     parser.add_argument('--task',default='', type=str, help='The task to evaluate')
     parser.add_argument('--seed',default='', type=int, help='Random seed')
     parser.add_argument('--method',default='', type=str, help='Method to evaluate')
@@ -52,7 +53,7 @@ def main(args):
 
     prompter = Prompter(template=template, head=head, sep='\n')
 
-    labels = read_demo_benchmark(task=args.task, seed=0)[0].data_info['label_space']
+    labels = read_demo_benchmark(data_path=args.data_path, task=args.task, seed=0)[0].data_info['label_space']
 
     direct_inferencer = DirectInferencer(model, tokenizer, prompter, labels)
 

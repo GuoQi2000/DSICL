@@ -1,7 +1,8 @@
 #!/bin/bash
 GPU=0
 TASK="snli"
-MODEL_PATH="/home/gq/model/llama_1.3b"
+MODEL_PATH="xxx"
+DATA_PATH="xxx"
 METHOD="Random"
 SEED=1
 SHOTS=4
@@ -11,6 +12,7 @@ while [[ "$#" -gt 0 ]]; do
         --gpu) GPU="$2"; shift ;;
         --task) TASK="$2"; shift ;;
         --model_path) MODEL_PATH="$2"; shift ;;
+        --data_path) DATA_PATH="$2"; shift ;;
         --method) METHOD="$2"; shift ;;
         --seed) SEED="$2"; shift ;;
         --shots) SHOTS="$2"; shift ;;
@@ -24,6 +26,7 @@ SAVING_PATH="./output/$TASK/$METHOD/seed=$SEED"
 python Random_main.py --gpu "$GPU" \
                     --saving_path "$SAVING_PATH" \
                     --model_path "$MODEL_PATH" \
+                    --data_path "$DATA_PATH" \
                     --task "$TASK"  \
                     --seed "$SEED"  \
                     --shots "$SHOTS"  \
@@ -31,6 +34,7 @@ python Random_main.py --gpu "$GPU" \
 python evaluate.py --gpu "$GPU" \
                    --saving_path "$SAVING_PATH" \
                    --model_path "$MODEL_PATH" \
+                   --data_path "$DATA_PATH" \
                    --task "$TASK"  \
                    --seed "$SEED"  \
                    --method "$METHOD"  \

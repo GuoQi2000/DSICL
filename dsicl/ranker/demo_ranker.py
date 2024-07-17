@@ -36,7 +36,6 @@ class DEmORanker(BaseRanker):
                     if not key == 'label':
                         content_free_sample[key] = token
                 prefix = self.prompter.generate_context([demos[_] for _ in order], content_free_sample)
-               # print(prefix)
                 probs = self.decoder.decode(prefix, self.labels)
                 content_free_probs += probs
             content_free_probs /= len(self.content_free_tokens)

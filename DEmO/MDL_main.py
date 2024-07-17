@@ -21,6 +21,7 @@ def paras_args():
     parser.add_argument('--gpu',default='0', type=str, help='Specify the GPU to use')
     parser.add_argument('--saving_path',default='./output/', type=str, help='Directory to save the demonstrations')
     parser.add_argument('--model_path',default='', type=str, help='Model to use')
+    parser.add_argument('--data_path',default='', type=str, help='Path of DEmO data')
     parser.add_argument('--task',default='', type=str, help='The task to evaluate')
     parser.add_argument('--seed',default='', type=int, help='Random seed')
     parser.add_argument('--shots',default=4, type=int, help='Number of demonstrations')
@@ -38,7 +39,7 @@ def main(args):
     if not os.path.exists(args.saving_path):
         os.makedirs(args.saving_path)
 
-    trainset, testset = read_demo_benchmark(task=args.task, seed=args.seed)
+    trainset, testset = read_demo_benchmark(data_path=args.data_path, task=args.task, seed=args.seed)
 
     template, head = DEMO_TEMPLATE[args.task], DEMO_HEAD[args.task]
 
