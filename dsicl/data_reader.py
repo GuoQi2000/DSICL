@@ -5,40 +5,7 @@ import numpy as np
 from .template import LABEL_MAP
 from .utils import set_seed
 
-DATA_ROOT = "./DEmO_data/"
-
-def read_train_test(task, seed):
-    set_seed(seed)
-    if task == 'rte':
-        trainset = get_data_reader(file_name='rte_train.json',  label_map={'entailment': 'yes','not_entailment':'no'})
-        testset1 = get_data_reader(file_name='scitail.json', label_map={0: 'yes',1:'no'})
-        testset2 = get_data_reader(file_name='hans.json', label_map={0: 'yes',1:'no'})
-        testset = DataReader(testset1.data+testset2.data)
-    elif task == 'sst2':
-        trainset = get_data_reader(file_name='sst2.json', label_map={0: 'negative',1:'positive'})
-        testset1 = get_data_reader(file_name='flipkart.json', label_map={0: 'negative',1:'positive'})
-        testset2 = get_data_reader(file_name='yelp_polarity.json', label_map={0: 'negative',1:'positive'})
-        testset3 = get_data_reader(file_name='imdb.json', label_map={0: 'negative',1:'positive'})
-        testset = DataReader(testset1.data+testset2.data+testset3.data)
-    elif task == 'mnli':
-        trainset = get_data_reader(file_name='mnli.json',  label_map={0: 'yes',1:'maybe',2:'no'})
-        testset1 = get_data_reader(file_name='mnli_mis.json', label_map={0: 'yes',1:'maybe',2:'no'})
-        testset2 = get_data_reader(file_name='snli.json', label_map={0: 'yes',1:'maybe',2:'no'})
-        testset = DataReader(testset1.data+testset2.data)
-    elif task == 'qnli':
-        trainset = get_data_reader(file_name='qnli.json',  label_map={0: 'yes',1:'no'})
-        testset = get_data_reader(file_name='newsqa.json', label_map={0: 'no',1:'yes'})
-    elif task == 'mrpc':
-        trainset = get_data_reader(file_name='mrpc.json',  label_map={0: 'no',1:'yes'})
-        testset1 = get_data_reader(file_name='qqp.json',  label_map={0: 'no',1:'yes'})
-        testset2 = get_data_reader(file_name='twitter.json', label_map={0: 'no',1:'yes'})
-        testset = DataReader(testset1.data+testset2.data)
-    elif task == 'cola':
-        trainset = get_data_reader(file_name='cola.json',  label_map={0: 'no',1:'yes'})
-        testset = get_data_reader(file_name='cola_ood.json', label_map={0: 'no',1:'yes'})
-    testset, _ = testset.split(num=min(len(testset), 3000), random=True)
-    return trainset, testset
-
+DATA_ROOT = "../DEmO/DEmO_data/"
 
 def read_demo_benchmark(task, seed):
     if task == 'sst2':
