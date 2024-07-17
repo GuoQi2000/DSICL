@@ -34,7 +34,7 @@ def main(args):
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, legacy=False, use_fast=False, padding_side="right")
-    model = AutoModelForCausalLM.from_pretrained(args.model_path).half().to(torch.device('cuda'))
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, use_cache=True).half().to(torch.device('cuda'))
 
     if not os.path.exists(args.saving_path):
         os.makedirs(args.saving_path)
